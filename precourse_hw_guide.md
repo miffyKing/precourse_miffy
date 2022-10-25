@@ -21,6 +21,9 @@
     - 브랜치 생성 : ```git branch 새브랜치이름```
     - 브랜치 생성과 동시에 체크아웃 : ```git branch -b 새브랜치이름```
     - 브랜치 목록 조회 : ```git branch```
+  - branch 이동 명령어.
+    - 어느 브랜치로 가겠다 : ```git switch 브랜치이름  ```
+  
   - git branch -b 를 통해 miffyKing 이란 이름의 브랜치를 새로 만들었다. 그러고 git 홈페이지에서 새로 브랜치가 만들어 졌는지 확인하면 아직 반영이 안되어 있다. 새 브랜치에서 작업 후 push 까지해야 miffyKing 브랜치가 보일 것이다. 예전에 사촌동생 과제를 도와주다가 알게된 사실이다!
   
   ![image](https://user-images.githubusercontent.com/87696004/197821898-1c6638fe-3a7d-425e-9f01-c88a494a30da.png)
@@ -28,3 +31,16 @@
 - 통합 개발 환경 (IDE) 로 가져오기.
   - 내가 이용할 ide로 가져온다. 난 인텔리제이를 사용할것이다.
   - 아무리 씹 찾아잮ㅕ도 import project가 없다. 걍 open project로 열면 gradle issue라고 나온다. 속상하다;;;;;
+
+
+
+- 수정후 commit, push 하기
+  - git add . 
+  - git commit -m "   "
+  - 까지는 똑같이 했는데
+  - 실수로 git push 만 하고 안된다 판단해 
+  - ``` git push --set-upstream origin miffyKing ```
+  - 이 명령을 갈겨 push 했다. 내일 어차피 다시 할 땐 꼭 ``` git push origin miffyKing ``` 으로 올리겠다.
+
+
+- pull request 보내기
